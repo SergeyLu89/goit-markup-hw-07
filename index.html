@@ -25,7 +25,9 @@
             >Web<span class="logo-studio-light-bg">Studio</span></a
           >
           <ul class="list menu">
-            <li><a class="link menu-item active-page" href="./index.html">Studio</a></li>
+            <li>
+              <a class="link menu-item active-page" href="./index.html">Studio</a>
+            </li>
             <li><a class="link menu-item" href="./portfolio.html">Portfolio</a></li>
             <li><a class="link menu-item" href="">Contacts</a></li>
           </ul>
@@ -38,8 +40,100 @@
             <li><a class="link adress-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-open-btn" data-menu-open>
+          <svg class="mobile-menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-contaner">
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu-nav-list">
+            <li class="mobile-menu-nav-list-item">
+              <a
+                class="link mobile-menu-item mobile-menu-nav-item mobole-menu-active-page"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-nav-list-item">
+              <a class="link mobile-menu-item mobile-menu-nav-item" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-nav-list-item">
+              <a class="link mobile-menu-item mobile-menu-nav-item" href="#">Contacts</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-contact-container">
+            <ul class="list mobile-menu-adress-list">
+              <li>
+                <a class="link mobile-menu-contact-tell" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="link mobile-menu-item mobile-menu-email" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list mobile-menu-social-list">
+              <li>
+                <a class="mobile-menu-social-link" href="#">
+                  <svg
+                    class="mobile-menu-social-icon"
+                    aria-label="instagram"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-social-link" href="#"
+                  ><svg class="mobile-menu-social-icon" aria-label="twitter" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-social-link" href="#"
+                  ><svg
+                    class="mobile-menu-social-icon"
+                    aria-label="facebook"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-social-link" href="#"
+                  ><svg
+                    class="mobile-menu-social-icon"
+                    aria-label="linkedin"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
@@ -108,13 +202,28 @@
           <h2 class="secondary-title">What Are We Doing</h2>
           <ul class="list products-list">
             <li class="products-list-item">
-              <img src="./images/monitor.jpg" alt="monitor" width="360" />
+              <img
+                srcset="./images/are_we_doing/monitor@2x.jpg 2x"
+                src="./images/are_we_doing/monitor.jpg"
+                alt="monitor"
+                width="360"
+              />
             </li>
             <li class="products-list-item">
-              <img src="./images/mobile-phone.jpg" alt="mmobile phone" width="360" />
+              <img
+                srcset="./images/are_we_doing/phone@2x.jpg 2x"
+                src="./images/are_we_doing/phone.jpg"
+                alt="mmobile phone"
+                width="360"
+              />
             </li>
             <li class="products-list-item">
-              <img src="./images/phone-and-notebook.jpg" alt="phone and notebook" width="360" />
+              <img
+                srcset="./images/are_we_doing/phone_notebook@2x.jpg 2x"
+                src="./images/are_we_doing/phone_notebook.jpg"
+                alt="phone and notebook"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -124,7 +233,12 @@
           <h2 class="secondary-title">Our Team</h2>
           <ul class="list team-list">
             <li class="team-list-item">
-              <img src="./images/Mark.jpg" alt=" man" width="264" />
+              <img
+                srcset="./images/team/mark@2x.jpg 2x"
+                src="./images/team/mark.jpg"
+                alt=" man"
+                width="264"
+              />
               <div class="team-list-text-content">
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="team-item-description">Product Designer</p>
@@ -161,7 +275,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/Tom.jpg" alt="man" width="264" />
+              <img
+                srcset="./images/team/tom@2x.jpg 2x"
+                src="./images/team/tom.jpg"
+                alt="man"
+                width="264"
+              />
               <div class="team-list-text-content">
                 <h3 class="subtitle">Tom Ford</h3>
                 <p class="team-item-description">Frontend Developer</p>
@@ -198,7 +317,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/Camila.jpg" alt="woman" width="264" />
+              <img
+                srcset="./images/team/camila@2x.jpg 2x"
+                src="./images/team/camila.jpg"
+                alt="woman"
+                width="264"
+              />
               <div class="team-list-text-content">
                 <h3 class="subtitle">Camila Garcia</h3>
                 <p class="team-item-description">Marketing</p>
@@ -235,7 +359,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/Daniel.jpg" alt="man" width="264" />
+              <img
+                srcset="./images/team/daniel@2x.jpg 2x"
+                src="./images/team/daniel.jpg"
+                alt="man"
+                width="264"
+              />
               <div class="team-list-text-content">
                 <h3 class="subtitle">Daniel Wilson</h3>
                 <p class="team-item-description">UI Designer</p>
@@ -345,63 +474,70 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-contant-box">
-        <div class="footer-conten-left-side">
-          <a class="link logo logo-footer" href="./index.html"
-            >Web<span class="logo-studio-dark-bg">Studio</span></a
-          >
-          <p class="footer-discription">
-            Increase the flow of customers and sales for your business with digital marketing &
-            growth solutions.
-          </p>
-        </div>
-        <div class="footer-content-right-side">
-          <p class="media">Social media</p>
-          <ul class="list footer-social-list">
-            <li class="footer-social-list-item">
-              <a class="social-icon-link" href="">
-                <svg class="social-icon" aria-label="instagram icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="social-icon-link" href="">
-                <svg class="social-icon" aria-label="twitter icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="social-icon-link" href="">
-                <svg class="social-icon" aria-label="facebook icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="social-icon-link" href="">
-                <svg class="social-icon" aria-label="linkedin icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-foorm-box">
-          <p class="media">Subscribe</p>
-          <form class="footer-form">
-            <label class="footer-form-label">
-              <input type="email" class="footer-form-input" name="user-mail" placeholder="E-mail" />
-            </label>
+      <div class="container footer-container">
+        <div class="footer-contant-box">
+          <div class="footer-conten-left-side">
+            <a class="link logo logo-footer" href="./index.html"
+              >Web<span class="logo-studio-dark-bg">Studio</span></a
+            >
+            <p>
+              Increase the flow of customers and sales for your business with digital marketing &
+              growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-box">
+            <p class="media">Social media</p>
+            <ul class="list footer-social-list">
+              <li class="footer-social-list-item">
+                <a class="social-icon-link" href="">
+                  <svg class="social-icon" aria-label="instagram icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="social-icon-link" href="">
+                  <svg class="social-icon" aria-label="twitter icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="social-icon-link" href="">
+                  <svg class="social-icon" aria-label="facebook icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="social-icon-link" href="">
+                  <svg class="social-icon" aria-label="linkedin icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form-box">
+            <p class="media">Subscribe</p>
+            <form class="footer-form">
+              <label class="footer-form-label">
+                <input
+                  type="email"
+                  class="footer-form-input"
+                  name="user-mail"
+                  placeholder="E-mail"
+                />
+              </label>
 
-            <button type="submit" class="footer-form-btn">
-              Subscribe
-              <svg class="footer-form-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-paper_plane"></use>
-              </svg>
-            </button>
-          </form>
+              <button type="submit" class="footer-form-btn">
+                Subscribe
+                <svg class="footer-form-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-paper_plane"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -473,5 +609,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
