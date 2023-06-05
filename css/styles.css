@@ -330,8 +330,8 @@ button {
   .menu-item {
     font-weight: 500;
     color: var(--secondary-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: var(--main-font);
     font-size: var(--main-font-size);
     line-height: var(--main-line-hight);
@@ -362,6 +362,10 @@ button {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+  }
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -464,6 +468,7 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
     height: 600px;
+    max-width: 1440px;
   }
   .hero-button {
     margin-top: 48px;
@@ -490,9 +495,12 @@ button {
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .features-list-item:not(:last-child) {
     margin-bottom: 72px;
+  }
+  .features-list-item > .subtitle {
+    text-align: center;
   }
 }
 @media screen and (max-width: 1157px) {
@@ -505,7 +513,7 @@ button {
     line-height: 1.1;
     text-transform: capitalize;
     color: var(--secondary-color);
-    text-align: center;
+
     letter-spacing: var(--main-letter-spacing);
     margin-bottom: 8px;
   }
@@ -603,7 +611,7 @@ button {
 .social-icon {
   fill: var(--secondary-white-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .team-list {
     flex-direction: column;
     gap: 72px;
