@@ -330,8 +330,6 @@ button {
   .menu-item {
     font-weight: 500;
     color: var(--secondary-color);
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-family: var(--main-font);
     font-size: var(--main-font-size);
     line-height: var(--main-line-hight);
@@ -363,12 +361,17 @@ button {
     background-color: #404bbf;
     border-radius: 2px;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .page-header {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .menu-item {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 }
-
 @media screen and (min-width: 1158px) {
   .logo {
     margin-right: 76px;
@@ -377,6 +380,10 @@ button {
     font-size: var(--main-font-size);
     line-height: var(--main-line-hight);
     letter-spacing: var(--main-letter-spacing);
+  }
+  .menu-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   .header-adress-list {
     display: flex;
@@ -628,36 +635,42 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .customers-list {
-    gap: 72px 16px;
-  }
-}
-@media screen and (max-width: 1157px) {
-  .customers-list {
-    flex-wrap: wrap;
-    gap: 72px 24px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .customers-list {
-    gap: 24px;
-  }
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 168px;
   height: 88px;
+
   border: 1px solid;
   border-radius: 4px;
   color: #8e8f99;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .customers-link {
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+}
+
 .customers-logo {
   fill: currentColor;
 }
